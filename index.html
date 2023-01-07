@@ -1,12 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-@@include('html/head.html',{  
-"title":"Бухгалтерский аутсорсинг"
-})
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.css?_v=20230107062834">
+   <!-- Заголовок страницы в браузере -->
+   <title>Бухгалтерский аутсорсинг</title>
+   <!-- Кодировка страницы -->
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+
+   <!-- Отключает формирование ссылки у номера телефона на iOS -->
+   <meta name="format-detection" content="telephone=no">
+   <!-- Краткое описание страницы  -->
+   <meta name="description" content="Пример работы,">
+   <!-- Ключевые слова страницы  -->
+   <meta name="keywords" content="">
+   <!-- Управление доступом поисковых роботов к странице -->
+   <!-- Запрет индексации страницы полностью -->
+   <!--<meta name="robots" content="none">-->
+   <!-- Автор страницы -->
+   <meta name="Author" content="Умаров Тимур">
+   <!-- Авторские права -->
+   <meta name="Copyright" content="">
+   <!-- Адрес автора -->
+   <meta name="Address" content="">
+   <!-- локализация сайта, для русскоязычного сайта ru_RU -->
+   <!--<meta property="og:locale" content="ru_RU">-->
+   <!-- тип контента, по умолчанию используется article -->
+   <meta property="og:type" content="article">
+   <!-- заголовок страницы, который будет выводится в записи социальной сети -->
+   <meta property="og:title" content="">
+   <!-- описание страницы -->
+   <meta property="og:description" content="">
+   <!-- ссылка на изображение, которое будет публиковаться в записи -->
+   <meta property="og:image" content="">
+   <!-- ссылка на текущую страницу -->
+   <meta property="og:url" content="">
+   <!-- название сайта -->
+   <meta property="og:site_name" content="">
+   <!-- Тип карты, по умолчанию используется summary -->
+   <meta name="twitter:card" content="">
+   <!-- Имя/логин автора -->
+   <meta name="twitter:site" content="">
+   <!-- Название страницы -->
+   <meta name="twitter:title" content="">
+   <!-- Описание страницы -->
+   <meta name="twitter:description" content="">
+   <!-- Cсылка на изображение -->
+   <meta name="twitter:image" content="">
+</head>
 
 <body>
    <div class="wrapper">
-      @@include('html/header.html',{})
+      <header class="header">
+   <div class="header__content _container">
+      <div class="header__burger">
+         <span></span>
+      </div>
+      <div class="header__logo _ibg">
+         <picture><source srcset="img/logo.webp" type="image/webp"><img src="img/logo.png" alt=""></picture>
+      </div>
+      <div class="header__body">
+         <nav class="header__menu">
+            <ul class="header__menu-list">
+               <li >
+                  <a href="" class="header__menu-link _decisions-header">Услуги</a>
+               </li>
+               <li>
+                  <a href="" class="header__menu-link _company-header">Преимущества</a>
+               </li>
+               <li >
+                  <a href="" class="header__menu-link _consultation-header">Узнать стоимость</a>
+               </li>
+               <li >
+                  <a href="" class="header__menu-link _contacts-header">Контакты</a>
+               </li>
+            </ul>
+            <div class="header__menu-contacts">
+               <a href="" class="header__menu-contacts__mail">
+                  <img src="img/icon/mail.svg" alt="">
+                  <span>yourmailaddrers@gmail.com</a></span>
+               <a href="" class="header__menu-contacts__phone">
+                  <img src="img/icon/phone.svg" alt="">
+                  <span>+998 XX-XXX-XX-XX</span>
+               </a>
+            </div>
+         </nav>
+         <div href="" class="header__phone">
+            <div class="header__phone-content">
+               <img class="header__phone-image" src="img/icon/phone.svg" alt="">
+               <a class="header__phone-link" href="">+998 XX-XXX-XX-XX</a>
+            </div>
+         </div>
+      </div>
+   </div>
+</header>
+
+
       <main class="main">
          <section class="first">
             <div class="first__content _container">
@@ -25,7 +116,7 @@
                      <a href="" class="first__body-button _to-contacts">Узнать стоимость</a>
                   </div>
                   <div class="first__image _ibg">
-                     <img src="@img/first-image.png" alt="">
+                     <picture><source srcset="img/first-image.webp" type="image/webp"><img src="img/first-image.png" alt=""></picture>
                   </div>
                </div>
             </div>
@@ -33,7 +124,7 @@
          <section class="second _container">
             <div class="second__row">
                <div class="second__image _ibg">
-                  <img src="@img/second-image.png" alt="">
+                  <picture><source srcset="img/second-image.webp" type="image/webp"><img src="img/second-image.png" alt=""></picture>
                </div>
                <div class="second__body">
                   <h2 class="second__body-title">Снимем все вопросы,
@@ -49,7 +140,7 @@
                   <article class="decisions__item">
                      <div class="decisions__item-row">
                         <div class="decisions__item-image _ibg">
-                           <img src="@img/theDecisions/restaurant-service.png" alt="">
+                           <picture><source srcset="img/theDecisions/restaurant-service.webp" type="image/webp"><img src="img/theDecisions/restaurant-service.png" alt=""></picture>
                         </div>
                         <h3 class="decisions__item-title">Общепит</h3>
                      </div>
@@ -59,7 +150,7 @@
                   <article class="decisions__item">
                      <div class="decisions__item-row">
                         <div class="decisions__item-image _ibg">
-                           <img src="@img/theDecisions/money-arm.png" alt="">
+                           <picture><source srcset="img/theDecisions/money-arm.webp" type="image/webp"><img src="img/theDecisions/money-arm.png" alt=""></picture>
                         </div>
                         <h3 class="decisions__item-title">Оптовая и розничная торговля</h3>
                      </div>
@@ -69,7 +160,7 @@
                   <article class="decisions__item">
                      <div class="decisions__item-row">
                         <div class="decisions__item-image _ibg">
-                           <img src="@img/theDecisions/earth.png" alt="">
+                           <picture><source srcset="img/theDecisions/earth.webp" type="image/webp"><img src="img/theDecisions/earth.png" alt=""></picture>
                         </div>
                         <h3 class="decisions__item-title _big">Внешнеэкономическая деятельность</h3>
                      </div>
@@ -79,7 +170,7 @@
                   <article class="decisions__item">
                      <div class="decisions__item-row">
                         <div class="decisions__item-image _ibg">
-                           <img src="@img/theDecisions/building.png" alt="">
+                           <picture><source srcset="img/theDecisions/building.webp" type="image/webp"><img src="img/theDecisions/building.png" alt=""></picture>
                         </div>
                         <h3 class="decisions__item-title">Строительство</h3>
                      </div>
@@ -88,7 +179,7 @@
                   <article class="decisions__item">
                      <div class="decisions__item-row">
                         <div class="decisions__item-image _ibg">
-                           <img src="@img/theDecisions/improve.png" alt="">
+                           <picture><source srcset="img/theDecisions/improve.webp" type="image/webp"><img src="img/theDecisions/improve.png" alt=""></picture>
                         </div>
                         <h3 class="decisions__item-title">Производство</h3>
                      </div>
@@ -102,7 +193,7 @@
             <div class="company__row">
                <article class="company__item">
                   <div class="company__item-icon">
-                     <img src="@img/Choise/docs.svg" alt="">
+                     <img src="img/Choise/docs.svg" alt="">
                   </div>
                   <p class="company__item-text">
                      Восстанавливаем первичную документацию,<strong>быстро приводим отчетность</strong> в полное соответствие законодательным нормам.
@@ -110,7 +201,7 @@
                </article>
                <article class="company__item">
                   <div class="company__item-icon">
-                     <img src="@img/Choise/money.svg" alt="">
+                     <img src="img/Choise/money.svg" alt="">
                   </div>
                   <p class="company__item-text">
                      Фиксированная стоимость на все бухгалтерские услуги
@@ -118,7 +209,7 @@
                </article>
                <article class="company__item">
                   <div class="company__item-icon">
-                     <img src="@img/Choise/clock.svg" alt="">
+                     <img src="img/Choise/clock.svg" alt="">
                   </div>
                   <p class="company__item-text">
                      <strong>Работаем больше 12 лет.</strong> Имеем опыт с&nbspразличными отраслями бизнеса
@@ -126,7 +217,7 @@
                </article>
                <article class="company__item">
                   <div class="company__item-icon">
-                     <img src="@img/Choise/building.svg" alt="">
+                     <img src="img/Choise/building.svg" alt="">
                   </div>
                   <p class="company__item-text">
                      Живое общение.<strong>Можно приехать к нам в офис</strong> и&nbspпроконсультироваться с&nbspбухгалтером по сложным вопросам бизнеса.
@@ -134,7 +225,7 @@
                </article>
                <article class="company__item">
                   <div class="company__item-icon">
-                     <img src="@img/Choise/library.svg" alt="">
+                     <img src="img/Choise/library.svg" alt="">
                   </div>
                   <p class="company__item-text">
                      Предупреждаем клиентов об изменениях в законодательстве
@@ -142,7 +233,7 @@
                </article>
                <article class="company__item">
                   <div class="company__item-icon">
-                     <img src="@img/Choise/phone.svg" alt="">
+                     <img src="img/Choise/phone.svg" alt="">
                   </div>
                   <p class="company__item-text">
                      <strong>С нами легко можно проконсультироваться</strong>по Telegram, Skype, WhatsApp и Viber
@@ -150,7 +241,7 @@
                </article>
                <article class="company__item">
                   <div class="company__item-icon">
-                     <img src="@img/Choise/stats-dots.svg" alt="">
+                     <img src="img/Choise/stats-dots.svg" alt="">
                   </div>
                   <p class="company__item-text">
                      Составим учетную и налоговую политику предприятия
@@ -162,7 +253,7 @@
             <div class="consultation__content _container">
                <div class="consultation__row">
                   <div class="consultation__image _img">
-                     <img loading="lazy" src="@img/contacts-image.svg" alt="">
+                     <img loading="lazy" src="img/contacts-image.svg" alt="">
                   </div>
                   <div class="consultation__body">
                      <h3 class="consultation__title">Записать
@@ -195,7 +286,7 @@
                      возьмем на себя</p>
                </div>
                <div class="scope__image _ibg">
-                  <img src="@img/Calculator.png" alt="">
+                  <picture><source srcset="img/Calculator.webp" type="image/webp"><img src="img/Calculator.png" alt=""></picture>
                </div>
             </div>
          </section>
@@ -237,7 +328,7 @@
                <div class="contacts__row">
                   <div class="contacts__item">
                      <div class="contacts__icon">
-                        <img src="@img/icon/phone.svg" alt="">
+                        <img src="img/icon/phone.svg" alt="">
                      </div>
                      <a class="contacts__text">
                         <div class="contacts__text-content">
@@ -247,7 +338,7 @@
                   </div>
                   <div class="contacts__item">
                      <div class="contacts__icon">
-                        <img src="@img/icon/mail.svg" alt="">
+                        <img src="img/icon/mail.svg" alt="">
                      </div>
                      <a class="contacts__text">
                         <div class="contacts__text-content">
@@ -257,7 +348,7 @@
                   </div>
                   <div class="contacts__item">
                      <div class="contacts__icon">
-                        <img src="@img/icon/home.svg" alt="">
+                        <img src="img/icon/home.svg" alt="">
                      </div>   
                      <a class="contacts__text">
                         <div class="contacts__text-content">
@@ -267,7 +358,7 @@
                   </div>
                   <div class="contacts__item">
                      <div class="contacts__icon">
-                        <img src="@img/icon/phone.svg" alt="">
+                        <img src="img/icon/phone.svg" alt="">
                      </div>
                      <p class="contacts__text">
                         <div class="contacts__text-content">
@@ -282,9 +373,13 @@
             </div>
          </section>
       </main>
-      @@include('html/footer.html',{})
+      <footer class="footer">
+   <div class="footer__content _container">
+      <div class="footer__text">2023 ©️ #Название компании | реквизиты компании</div>
    </div>
-   <script src="js/app.min.js"></script>
+</footer>
+   </div>
+   <script src="js/app.min.js?_v=20230107062834"></script>
 </body>
 
 </html>
