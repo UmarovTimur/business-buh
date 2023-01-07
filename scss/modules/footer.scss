@@ -1,0 +1,23 @@
+.footer {
+    margin-top: 90px;
+    padding: 25px 0px;
+    background-color: var(--color-blue);
+    @media (max-width:$md3) {
+        padding: 15px 0px;        
+    }
+
+    // .footer__content
+
+    &__content {
+    }
+
+    // .footer__text
+
+    &__text {
+        text-align: center;
+        color: var(--main-bg-color);
+        font-size: 17px;
+        // font-weight: 700;
+        
+    }
+}

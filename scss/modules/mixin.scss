@@ -1,0 +1,49 @@
+@use "sass:math";
+// ======================================== adaptive VALUE =====================================================
+@mixin adaptive-value($property, $startSize, $minSize, $type) {
+   $addSize: $startSize - $minSize;
+   @if $type==1 {
+      //Если меньше
+      #{$property}: $startSize + px;
+      @media (max-width: #{$maxWidthContainer + px}) {
+         #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidthContainer - 320}));
+      }
+   } @else if $type==2 {
+      //Если Больше
+      #{$property}: $startSize + px;
+      @media (min-width: #{$maxWidthContainer + px}) {
+         #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+      }
+   } @else {
+      //Всегда
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 320px) / #{$maxWidth - 320}));
+   }
+}
+// ======================================== adaptive VALUE To =====================================================
+@mixin adaptive-valueTo($property, $startSize, $minSize, $to) {
+   $addSize: $startSize - $minSize;
+   @media (min-width: #{$to + px}) {
+      #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - #{$to + px}) / #{$maxWidthContainer - $to}));
+   }
+}
+// ======================================== % of maxWidthContainer =====================================================
+
+@function prcCont($px) {
+   @return math.ceil(calc($px/($maxWidthContainer/100)*1%));
+}
+
+// ============= To % ==================
+@function prc($pxOne, $pxTwo) {
+   $result: math.div($pxOne,$pxTwo);
+   @return $result;
+}
+// ============= rem ==================
+@function rem($px) {
+   $result: math.div($px, 16) + rem;
+   @return $result;
+}
+// ============= Em ==================
+@function em($px) {
+   $result: math.div($px, 16) + em;
+   @return $result;
+}

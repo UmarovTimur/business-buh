@@ -1,0 +1,156 @@
+$icomoon-font-family: "icomoon" !default;
+$icomoon-font-path: "../fonts" !default;
+
+$icon-home: "\e900";
+$icon-calculator: "\e940";
+$icon-phone: "\e942";
+$icon-address-book: "\e944";
+$icon-cross: "\ea0f";
+$icon-mail: "\ea83";
+$icon-facebook: "\ea90";
+$icon-instagram: "\ea92";
+$icon-whatsapp: "\ea93";
+$icon-spotify: "\ea94";
+$icon-telegram: "\ea95";
+$icon-twitter: "\ea96";
+$icon-vk: "\ea98";
+
+
+
+
+$icon-youtube: "\ea9d";
+$icon-behance: "\eaa8";
+$icon-skype: "\eac5";
+$icon-linkedin: "\eaca";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?f30471');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?f30471#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?f30471') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?f30471') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?f30471##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-facebook,.icon-instagram,.icon-whatsapp,.icon-twitter,.icon-skype,.icon-linkedin,.icon-youtube,.icon-behance,.icon-telegram,.icon-phone {
+    color: #fff;
+    background-color: var(--color-blue);
+    padding: .26em;
+    border-radius: .2em;
+}
+
+
+
+
+
+
+.icon-home {
+  &:before {
+    content: $icon-home; 
+  }
+}
+.icon-calculator {
+  &:before {
+    content: $icon-calculator; 
+  }
+}
+.icon-phone {
+  &:before {
+    content: $icon-phone; 
+  }
+}
+.icon-address-book {
+  &:before {
+    content: $icon-address-book; 
+  }
+}
+.icon-cross {
+  &:before {
+    content: $icon-cross; 
+  }
+}
+.icon-mail {
+  &:before {
+    content: $icon-mail; 
+  }
+}
+.icon-facebook {
+    color: #fff;
+    background-color: var(color-blue);
+    padding: .26em;
+    border-radius: .2em;
+  &:before {    
+    content: $icon-facebook; 
+  }
+}
+.icon-instagram {
+  &:before {
+    content: $icon-instagram; 
+  }
+}
+.icon-whatsapp {
+  &:before {
+    content: $icon-whatsapp; 
+  }
+}
+.icon-spotify {
+  &:before {
+    content: $icon-spotify; 
+  }
+}
+.icon-telegram {
+  &:before {
+    content: $icon-telegram; 
+  }
+}
+.icon-twitter {
+  &:before {
+    content: $icon-twitter; 
+  }
+}
+.icon-vk {
+  &:before {
+    content: $icon-vk; 
+  }
+}
+.icon-youtube {
+  &:before {
+    content: $icon-youtube; 
+  }
+}
+.icon-behance {
+  &:before {
+    content: $icon-behance; 
+  }
+}
+.icon-skype {
+
+  &:before {
+    content: $icon-skype; 
+  }
+}
+.icon-linkedin {
+  &:before {
+    content: $icon-linkedin; 
+  }
+}
+

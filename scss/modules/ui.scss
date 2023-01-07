@@ -1,0 +1,80 @@
+//[class^="_icon-"]::before, [class*=" _icon-"]::before  {
+//}
+/*==========================================   Технология ibg  ==================================================================*/
+._ibg {
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   position: relative;
+   & img {
+    width: 0;
+    height: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+   } 
+}
+._img {
+   position: relative;
+   & img {
+      position: absolute;
+      top:0;
+      left:0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+   }
+}
+/*==========================================   Переменные   ==================================================================*/
+:root {
+   --main-bg-color: rgba(247, 247, 247, 1);
+   --color-blue: #203458;
+   --color-yellow: #FFC501;
+   --color-gray: #3B4251;
+}
+ 
+$maxWidth: 1440;
+$maxWidthContainer: 1300;
+$fontSize: 17;
+$md1: $maxWidthContainer + px;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 550px;
+*::selection {
+}
+.wrapper {
+   max-width: 100vw;
+   overflow: hidden;
+   min-height: 100%;
+   display: flex;
+   flex-direction: column;
+   padding-top: 100px;
+   @media (max-width:$md2) {
+      padding-top: 70px;
+   }
+}
+._container {
+   max-width: $maxWidthContainer + px;
+   margin: 0 auto;
+   padding: 0px 15px;
+}
+.main {
+   flex: 1 1 auto;
+}
+* {
+   font-family: "Open Sans",Arial,Helvetica,sans-serif;
+   color: var(--color-blue);
+   line-height: 110%;
+}
+body {
+   background-color: #f5f5f5;
+   color:var(--color-blue)
+}
+/*==========================================   Компоненты   ==================================================================*/
+h2 {
+   font-weight: 700;
+   font-size: 36px;
+   line-height: 115%;
+}
